@@ -7,6 +7,7 @@ import GenerateQuiz from '@/pages/GenerateQuiz';
 import ViewQuiz from '@/pages/ViewQuiz';
 import Login from '@/pages/Login';
 import Dashboard from '@/pages/Dashboard';
+import Test from '@/pages/Test';
 import ProtectedRoute from '@/components/ProtectedRoute';
 
 // Suppress benign ResizeObserver warning in development
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <ProtectedRoute><Dashboard /></ProtectedRoute>,
+  },
+  {
+    path: "/test",
+    element: <Test />,
   },
 ]);
 
